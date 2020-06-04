@@ -1,0 +1,539 @@
+extends  ../_skeleton
+
+//- Includes
+
+block variables
+	- var activeCategory = 'home'
+	- var pageName = 'Home'
+
+block page
+	// Page Header
+	- navbarCounter++
+
+	header.section.page-header(data-type='anchor')
+		// RD Navbar
+		.rd-navbar-wrap
+			nav.rd-navbar.rd-navbar-minimal(
+			data-layout=                'rd-navbar-fixed'
+			data-sm-layout=             'rd-navbar-fixed'
+			data-md-layout=             'rd-navbar-fixed'
+			data-md-device-layout=      'rd-navbar-fixed'
+			data-lg-layout=             'rd-navbar-static'
+			data-lg-device-layout=      'rd-navbar-fixed'
+			data-xl-layout=             'rd-navbar-static'
+			data-xl-device-layout=      'rd-navbar-fixed'
+			data-lg-stick-up-offset=    '46px'
+			data-xl-stick-up-offset=    '46px'
+			data-xxl-stick-up-offset=   '46px'
+			data-lg-stick-up=           'true'
+			data-xl-stick-up=           'true'
+			data-xxl-stick-up=          'true')
+				.rd-navbar-main-outer
+					.rd-navbar-main
+						// RD Navbar Panel
+						.rd-navbar-panel
+							// RD Navbar Toggle
+							button.rd-navbar-toggle(data-rd-navbar-toggle='#rd-navbar-nav-wrap-' + navbarCounter): span
+
+							// RD Navbar Brand
+							a.rd-navbar-brand(href='index.html')
+								+png(logo.default.trueSize)(srcset='images/' + logo.default.retina + '.png 2x')
+
+						.rd-navbar-main-element
+							.rd-navbar-nav-wrap(id='rd-navbar-nav-wrap-' + navbarCounter)
+								include ../includes/_navigation
+
+
+	.swiper-container.swiper-slider.swiper-slider-minimal#home(
+	data-loop='true'
+	data-slide-effect='fade'
+	data-autoplay='3500'
+	data-simulate-touch='true')
+		.swiper-wrapper
+			.swiper-slide(data-slide-bg='images/slider-minimal-slide-1-1920x888.jpg'): .swiper-slide-caption
+				.container: .swiper-slide-text: .text-large Dedicated to results
+
+			.swiper-slide(data-slide-bg='images/slider-minimal-slide-2-1920x888.jpg'): .swiper-slide-caption
+				.container: .swiper-slide-text: .text-large Solutions made easy
+
+			.swiper-slide(data-slide-bg='images/slider-minimal-slide-3-1920x888.jpg'): .swiper-slide-caption
+				.container: .swiper-slide-text: .text-large The Best in the market
+
+		.swiper-pagination-outer.container: .swiper-pagination.swiper-pagination-modern.swiper-pagination-marked(data-index-bullet='true')
+
+
+	// Our Services
+	section.section.section-lg.text-center#services(data-type='anchor')
+		.container
+			h3.wow-outer: span.wow.slideInUp Our Services
+			p.wow-outer: span.text-width-1.wow.slideInDown We provide a variety of marketing and promotion services to enable you and your business with innovative tools and strategies and attract more customers.
+			.row.row-50.row-xxl-70.offset-top-2
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft
+						.box-light-icon.fl-bigmug-line-flag53
+						h4.box-light-title Branding
+						p Whether you’re looking to launch a brand or you just need help clarifying your message, we can help you.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.05s')
+						.box-light-icon.fl-bigmug-line-equalization3
+						h4.box-light-title Strategy
+						p Our experts can help you develop your marketing strategy and integrate it into your advertising campaign.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.1s')
+						.box-light-icon.fl-bigmug-line-video163
+						h4.box-light-title Video Production
+						p Need a professional advertising video for your campaign? We can offer anything you need.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.15s')
+						.box-light-icon.fl-bigmug-line-file69
+						h4.box-light-title Copywriting
+						p Our experienced copywriters will gladly provide you with high-quality texts for your websites or advertisements.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft
+						.box-light-icon.fl-bigmug-line-share27
+						h4.box-light-title SMM
+						p We can develop a simple social media marketing plan designed specifically for your business and your needs.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.05s')
+						.box-light-icon.fl-bigmug-line-store10
+						h4.box-light-title Outdoor Advertising
+						p If you need to create your next out-of-home campaign or lease your space, we can satisfy your advertising needs.​
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.1s')
+						.box-light-icon.box-light-title.fl-bigmug-line-square160
+						h4.box-light-title Graphic Design
+						p Our graphic design services include printing brochures, banners and logos for your advertising campaign.
+
+				.col-sm-6.col-md-4.col-lg-3.wow-outer
+					// Box Light
+					article.box-light.wow.slideInLeft(data-wow-delay='.15s')
+						.box-light-icon.fl-bigmug-line-megaphone11
+						h4.box-light-title Marketing
+						p This service includes a variety of promotional techniques and methods that can boost your company’s products.
+
+	// A Few Words About Us
+	section.section.section-lg.bg-gray-100#about-us(data-type='anchor')
+		.container
+			.row.row-50.justify-content-center.justify-content-lg-between
+				.col-md-10.col-lg-6.col-xl-5
+					h3.wow-outer: span.wow.slideInDown A Few Words About Us
+					p.wow-outer: span.wow.slideInDown(data-wow-delay='.05s') We are a team of talented marketers who happen to love creating smart ideas for those who will have us. We use our creative potential to provide the smartest ideas.
+					p.wow-outer: span.wow.slideInDown(data-wow-delay='.1s') We have a wide range of experience, expertise and tools to create and implement your campaigns, from carefully curating awesome content to optimising it with our great SEO powers as well as outdoor marketing skills.
+					.wow-outer.button-outer
+						a.button.button-lg.button-primary.button-winona.wow.slideInDown(data-wow-delay='.1s' href='#') Learn more
+
+				.col-md-10.col-lg-6.wow-outer
+					+jpg('large-features-2-570x368', 'img-responsive').wow.slideInRight
+
+
+	// CTA Thin
+	section.section.section-xs.bg-primary-gradient.text-center
+		.container
+			.row.justify-content-center
+				.col-sm-10.col-md-12
+					.box-cta-thin
+						h4.wow-outer: span.wow.slideInRight Learn the Cost of your #[span.font-weight-bold Marketing Campaign] Right Now!
+						a.button.button-primary.button-winona(href='#') View all pricing
+
+	// Who We Are
+	section.section.section-lg.section-last.text-center#our-team(data-type='anchor')
+		.container
+			h3.wow-outer.text-center: span.wow.slideInDown Who We Are
+			.row.row-50
+				.col-sm-6.col-lg-4.wow-outer
+					// Profile Minimal
+					article.profile-minimal.wow.slideInLeft
+						+jpg('team-2-370x368', 'profile-minimal-image')
+						.profile-minimal-caption
+							h4.profile-minimal-title Jean Thompson
+							p.profile-minimal-position PR Manager
+
+				.col-sm-6.col-lg-4.wow-outer
+					// Profile Minimal
+					article.profile-minimal.wow.slideInLeft(data-wow-delay='.05s')
+						+jpg('team-3-370x368', 'profile-minimal-image')
+						.profile-minimal-caption
+							h4.profile-minimal-title Brian Payne
+							p.profile-minimal-position Marketing Expert
+
+				.col-sm-6.col-lg-4.wow-outer
+					// Profile Minimal
+					article.profile-minimal.wow.slideInLeft(data-wow-delay='.1s')
+						+jpg('team-1-370x368', 'profile-minimal-image')
+						.profile-minimal-caption
+							h4.profile-minimal-title Nathan Porter
+							p.profile-minimal-position CEO, Founder
+
+			.wow-outer.button-outer
+				a.button.button-lg.button-primary.button-winona.wow.slideInUp(href='#') View all Team
+
+
+	// Testimonials
+	section.section.section-lg.bg-gray-100#testimonials(data-type='anchor')
+		.container
+			h3.text-center Testimonials 
+			.row.row-50.justify-content-center.justify-content-lg-between
+				.col-md-10.col-lg-5
+					.owl-carousel(
+					data-items='1'
+					data-dots='true'
+					data-nav='false'
+					data-loop='true'
+					data-margin='30'
+					data-stage-padding='0'
+					data-mouse-drag="false")
+						.wow-outer: blockquote.quote-modern.wow.slideInLeft
+							+quote-mark.quote-modern-mark
+							.quote-modern-text
+								p Profilab is, hands down, one of the best companies that we have worked with! The company has either met or exceeded all of the goals that we initially set for all of the projects that they implemented for us. I am sure that our company will partner with them again in the future.
+							.quote-modern-meta
+								.quote-modern-avatar: +jpg('testimonials-person-3-96x96')
+								.quote-modern-info
+									cite.quote-modern-cite Albert Webb
+									p.quote-modern-caption CEO at Majestic
+
+						.wow-outer: blockquote.quote-modern.wow.slideInLeft
+							+quote-mark.quote-modern-mark
+							.quote-modern-text
+								p Profilab team provides us with a full service digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email and marketing automation that has increased our visibility and inbound lead generation.
+							.quote-modern-meta
+								.quote-modern-avatar: +jpg('testimonials-person-1-96x96')
+								.quote-modern-info
+									cite.quote-modern-cite Kelly McMillan
+									p.quote-modern-caption Private Entrepreneur
+
+						.wow-outer: blockquote.quote-modern.wow.slideInLeft
+							+quote-mark.quote-modern-mark
+							.quote-modern-text
+								p We rely on Profilab for its digital marketing expertise, particularly in the areas of SEO and social media marketing. Their team is knowledgeable, responsive and committed to supporting our initiatives, making them invaluable partners in our effort to promote our company.
+							.quote-modern-meta
+								.quote-modern-avatar: +jpg('testimonials-person-2-96x96')
+								.quote-modern-info
+									cite.quote-modern-cite Harold Barnett
+									p.quote-modern-caption Regional Manager
+
+				.col-md-10.col-lg-6.wow-outer
+					.thumbnail-video-1.bg-gray-700.wow.slideInLeft
+						.embed-responsive.embed-responsive-16by9: iframe(width='570' height='320' src='//www.youtube.com/embed/QZzbm-FrkGk' allowfullscreen='')
+						.thumbnail-video__overlay.video-overlay(style='background-image: url(images/video-preview-1-570x320.jpg)')
+							.button-video
+							h5 Lawrence Alvarado
+
+	// Pricing
+	section.section.section-lg.text-center#pricing(data-type='anchor')
+		.container
+			h3 Pricing
+			p: span.text-width-1 In this section, you can learn more about available pricing plans and included services. Even if you own a small business and don’t need big marketing campaign, we have what to offer.
+			.pricing-group-modern.wow-outer
+				// Pricing Modern
+				article.pricing-modern.wow.fadeInLeft
+					ul.pricing-modern-rating
+						li.mdi.mdi-star-outline
+					h5.pricing-modern-title: a(href='#') Small Business
+					table.pricing-modern-table
+						tr
+							td 60
+							td Campaign Hours
+						tr
+							td 1
+							td Month
+						tr
+							td 10
+							td Additional Services
+
+					p.pricing-modern-price
+						span.pricing-modern-price-currency $
+						| 789.00
+
+					a.button.button-primary.button-winona(href='#') Order service
+
+				// Pricing Modern
+				article.pricing-modern.wow.fadeInLeft(data-wow-delay='.05s')
+					ul.pricing-modern-rating
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+					h5.pricing-modern-title: a(href='#') Medium Business
+					table.pricing-modern-table
+						tr
+							td 5
+							td Campaign Hours
+						tr
+							td 2
+							td Months
+						tr
+							td 20
+							td Additional Services
+
+					p.pricing-modern-price
+						span.pricing-modern-price-currency $
+						| 1299.00
+
+					a.button.button-primary.button-winona(href='#') Order service
+
+				// Pricing Modern
+				article.pricing-modern.wow.fadeInLeft(data-wow-delay='.1s')
+					ul.pricing-modern-rating
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+					h5.pricing-modern-title: a(href='#') Big Business
+					table.pricing-modern-table
+						tr
+							td 10
+							td Campaign Hours
+						tr
+							td 3
+							td Months
+						tr
+							td 40
+							td Additional Services
+
+					p.pricing-modern-price
+						span.pricing-modern-price-currency $
+						| 2369.00
+
+					a.button.button-primary.button-winona(href='#') Order service
+
+				// Pricing Modern
+				article.pricing-modern.wow.fadeInLeft(data-wow-delay='.15s')
+					ul.pricing-modern-rating
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+						li.mdi.mdi-star-outline
+					h5.pricing-modern-title: a(href='#') Corporation
+					table.pricing-modern-table
+						tr
+							td 20+
+							td Campaign Hours
+						tr
+							td 4
+							td Months
+						tr
+							td 60+
+							td Additional Services
+
+					p.pricing-modern-price
+						span.pricing-modern-price-currency $
+						| 6790.00
+
+					a.button.button-primary.button-winona(href='#') Order service
+
+
+	// Wide CTA
+	section.section.section-md.bg-primary-gradient.text-center
+		.container
+			.box-cta-1
+				h3.wow-outer: span.wow.slideInRight We Offer Quality #[span.font-weight-bold Branding and Promotion]
+				.wow-outer.button-outer
+					a.button.button-lg.button-primary.button-winona.wow.slideInLeft(href='#') Free consultation
+
+
+	// Latest Blog Posts
+	section.section.section-lg.text-center#blog(data-type='anchor')
+		.container
+			h3.wow-outer: span.wow.slideInDown Latest Blog Posts
+			.row.row-50
+				.col-md-6.wow-outer
+					// Post Modern
+					article.post-modern.wow.slideInLeft
+						a.post-modern-media(href='#'): +jpg('grid-blog-1-571x353')
+						h4.post-modern-title: a(href='#') 10 Digital Marketing Mistakes to Avoid
+						ul.post-modern-meta
+							li by Theresa Barnes
+							li: time(datetime='2019') Apr 21, 2019 at 12:05 pm
+							li: a.button-winona(href='#') News
+						p Though managing your digital marketing campaign may seem easy, you can encounter some complexities, which usually lead to mistakes and a bad promotion effect.
+
+				.col-md-6.wow-outer
+					// Post Modern
+					article.post-modern.wow.slideInLeft
+						a.post-modern-media(href='#'): +jpg('grid-blog-2-571x353')
+						h4.post-modern-title: a(href='#') Where Marketers Need to Succeed This Season
+						ul.post-modern-meta
+							li by Theresa Barnes 
+							li: time(datetime='2019') Apr 21, 2019 at 12:05 pm
+							li: a.button-winona(href='#') News
+						p Being a successful marketer today might appear to require a never-ending list of skills. Where do you need to excel -- content creation, social media, web analytics, or all of the above?
+						
+			.wow-outer.button-outer
+				a.button.button-primary-outline.button-winona.wow.slideInUp(href='#') View all Blog posts
+
+	// Contact Us
+	section.section.bg-gray-100#contact-us(data-type='anchor')
+		.range.justify-content-xl-between
+			.cell-xl-6.align-self-center.container
+				.row
+					.col-lg-9.cell-inner: .section-lg
+						h3.wow-outer: span.wow.slideInDown Contact Us
+						// RD Mailform
+						form.rd-form.rd-mailform(data-form-output='form-output-global', data-form-type='contact', method='post', action='bat/rd-mailform.php')
+							.row.row-10
+								.col-md-6.wow-outer
+									.form-wrap.wow.fadeSlideInUp
+										label.form-label-outside(for='contact-first-name') First Name
+										input#contact-first-name.form-input(type='text' name='name' data-constraints='@Required')
+
+								.col-md-6.wow-outer
+									.form-wrap.wow.fadeSlideInUp
+										label.form-label-outside(for='contact-last-name') Last Name
+										input#contact-last-name.form-input(type='text' name='name' data-constraints='@Required')
+
+								.col-md-6.wow-outer
+									.form-wrap.wow.fadeSlideInUp
+										label.form-label-outside(for='contact-email') E-mail
+										input#contact-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+
+								.col-md-6.wow-outer
+									.form-wrap.wow.fadeSlideInUp
+										label.form-label-outside(for='contact-phone') Phone
+										input#contact-phone.form-input(type='text' name='phone' data-constraints='@PhoneNumber @Required')
+
+								.col-12.wow-outer
+									.form-wrap.wow.fadeSlideInUp
+										label.form-label-outside(for='contact-message') Your Message
+										textarea#contact-message.form-input(name='message' data-constraints='@Required')
+
+
+							.group.group-middle
+								.wow-outer
+									button.button.button-primary.button-winona.wow.slideInRight(type='submit') Send Message
+								p or use
+								.wow-outer
+									a(href='#').button.button-primary-outline.button-icon.button-icon-left.button-winona.wow.slideInLeft
+										span.icon.text-accent.mdi.mdi-facebook-messenger
+										| Messenger
+
+			.cell-xl-5.height-fill.wow.fadeIn
+				//Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.
+				//Please note that YOUR_API_KEY should replaced with your key.
+				//Example: <div class="google-map-container" data-key="YOUR_API_KEY">
+				.google-map-container( data-center='9870 St Vincent Place, Glasgow, DC 45 Fr 45.', data-zoom='5', data-icon='images/gmap_marker.png', data-icon-active='images/gmap_marker_active.png', data-styles='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":60}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":30}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ef8c25"},{"lightness":40}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#b6c54c"},{"lightness":40},{"saturation":-40}]},{}]' )
+					.google-map
+					ul.google-map-markers
+						li( data-location='9870 St Vincent Place, Glasgow, DC 45 Fr 45.', data-description='9870 St Vincent Place, Glasgow' )
+				//.rd-google-map(class="rd-google-map__model", data-marker="images/gmap_marker.svg", data-marker-active="images/gmap_marker_active.svg" data-styles='[{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]', data-zoom='14', data-x='-73.9874068', data-y='40.643180')
+				//	ul.map_locations
+				//		li(data-y='40.643180', data-x='-73.9874068')
+				//			p 9870 St Vincent Place, Glasgow, DC 45 Fr 45.
+
+
+
+	// Fullwidth Gallery 
+	section.section.text-center
+		// Owl Carousel
+		.owl-carousel.owl-carousel-dots-space(
+		data-items='2'
+		data-sm-items='3'
+		data-md-items='4'
+		data-lg-items='5'
+		data-xl-items='6'
+		data-dots='true'
+		data-nav='false'
+		data-stage-padding='0'
+		data-loop='true'
+		data-margin='0'
+		data-lightgallery='group'
+		data-mouse-drag="false")
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-1.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-1-640x640', 'thumbnail-thin-image')
+
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-2.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-2-640x640', 'thumbnail-thin-image')
+
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-3.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-3-640x640', 'thumbnail-thin-image')
+
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-4.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-4-640x640', 'thumbnail-thin-image')
+
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-5.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-5-640x640', 'thumbnail-thin-image')
+
+			// Thumbnail Thin
+			.wow-outer: a.thumbnail-thin.wow.slideInLeft(href='images/gallery-original-6.jpg' data-lightgallery='item'): .thumbnail-thin-inner
+				+jpg('galleries-6-640x640', 'thumbnail-thin-image')
+
+
+	// Page Footer
+	footer.section.footer-linked.bg-gray-700
+		.footer-linked-main
+			.container
+				.row.row-50
+					.col-lg-8
+						h4 Quick Links
+						hr.offset-right-1
+						.row.row-20
+							.col-6.col-sm-3
+								ul.list.list-xs
+									li: a(href='#') Services
+									li: a(href='#') Single Service
+									li: a(href='#') Contacts
+									li: a(href='#') Testimonials
+									li: a(href='#') Privacy Policy
+
+							.col-6.col-sm-3
+								ul.list.list-xs
+									li: a(href='#') Blog
+									li: a(href='#') About Us
+									li: a(href='#') Team Member Page
+									li: a(href='#') Login
+									li: a(href='#') Registration
+
+							.col-6.col-sm-3
+								ul.list.list-xs
+									li: a(href='#') Careers
+									li: a(href='#') Portfolio
+									li: a(href='#') Single Project
+									li: a(href='#') Our History
+									li: a(href='#') Single Job
+
+							.col-6.col-sm-3
+								ul.list.list-xs
+									li: a(href='#') Facebook
+									li: a(href='#') Twitter
+									li: a(href='#') Instagram
+									li: a(href='#') LinkedIn
+									li: a(href='#') Pinterest
+
+
+					.col-md-7.col-lg-4
+						h4 Contact Information
+						hr
+						ul.list-sm
+							li.object-inline
+								span.icon.icon-md.mdi.mdi-map-marker.text-gray-700
+								a.link-default(href='#') 2130 Fulton Street San Diego, CA #[br] 94117-1080 USA
+
+							li.object-inline
+								span.icon.icon-md.mdi.mdi-phone.text-gray-700
+								ul.list-0
+									li: a.link-default(href='tel:#') 1-800-1234-678
+									li: a.link-default(href='tel:#') 1-800-8765-098
+
+							li.object-inline
+								span.icon.icon-md.mdi.mdi-email.text-gray-700
+								a.link-default(href='mailto:#') info@demolink.org
+
+		.footer-linked-aside
+			.container
+				+rights
+
