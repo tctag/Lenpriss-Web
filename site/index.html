@@ -96,18 +96,39 @@
       </div>
       <!-- Our Services-->
       <section class="section section-lg text-center" id="services" data-type="anchor">
-        <div class="container">
+        <div class="container text-center">
           <h3 class="wow-outer"><span class="wow slideInUp">Our Services</span></h3>
           <p class="wow-outer"><span class="text-width-1 wow slideInDown">We offer a range of services that are targeted at enabling, enhancing and promoting the growth of SMEs and NGOs</span></p>
           <div class="row row-50 row-xxl-70 offset-top-2">
-            <div class="col-sm-6 col-md-4 col-lg-3 wow-outer">
+            <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
               <!-- Box Light-->
               <article class="box-light wow slideInLeft">
                 <div class="box-light-icon fl-bigmug-line-flag53"></div>
-                <h4 class="box-light-title">Business Development</h4>
-                <p>Listed among 100 SME women by Bank and Entrepreneur Magazine in 2017, LENPRISS is specially focused on SMEs in effective advisory as Business Development Strategies, supporting SMEs in critical areas of business development, business growth opportunities, fund raising, board management and bringing on board the most arduous clients with uncommon panache, charisma and winning mindset.
-Major SMEs across various spectrum of the following SMEs have benefitted from our Business Development Services in very recent years.
-</p>
+                <h4 class="box-light-title">Businesss Development</h4>
+                <p>Listed among 100 SME women by Bank and Entrepreneur Magazine in 2017, LENPRISS is specially focused on SMEs in effective advisory as Business Development Strategies, <span id="dots">...</span><span id="more" style="display :none;">supporting SMEs in critical areas of
+    business development, business growth opportunities, fund raising, board management and bringing on board the most arduous clients with uncommon panache, charisma and winning mindset.
+    Major SMEs across various spectrum of the following SMEs have benefitted from our Business Development Services in very recent years.
+
+  </span></p>
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction()" id="myBtn" >Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
@@ -115,11 +136,33 @@ Major SMEs across various spectrum of the following SMEs have benefitted from ou
               <article class="box-light wow slideInLeft" data-wow-delay=".05s">
                 <div class="box-light-icon fl-bigmug-line-equalization3"></div>
                 <h4 class="box-light-title">Marketing Services</h4>
-                <p>We act as a trusted extension of our clients’ marketing departments, producing results that directly and positively impact on our clients’ and customers’ business objectives. In our marketing services, we act differently, think disruptively and execute flawlessly.
+                <p>We act as a trusted extension of our clients’ marketing departments, producing results that directly and positively impact on our clients’ and customers’ business objectives. In our marketing services, we act differently, <span id="dots1">...</span><span id="more1" style="display :none;">think disruptively and execute flawlessly.
 We have empowered our clients to penetrate new markets, expand their business reach and introduce new products into the market place with significant competitive advantage in reaching and winning their trade and channels better.
 We offer marketing solutions and services that enable our clients to deliver on top line and market shares objectives.
 Our Marketing services have brought measureable business growth to organisations.
-</p>
+</span></p>
+
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction1()" id="myBtn1">Read more</button>
+
+<script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
@@ -127,9 +170,31 @@ Our Marketing services have brought measureable business growth to organisations
               <article class="box-light wow slideInLeft" data-wow-delay=".1s">
                 <div class="box-light-icon fl-bigmug-line-video163"></div>
                 <h4 class="box-light-title">Event Management and Promotion</h4>
-                <p>Lenpriss is a dependable brand in Event Management and 2222 Promotion being the catalytic force behind two major events of international significance. We have recently pulled together, organised and promoted some of the largest events in Sub-Saharan African. The most recent one being the Lagos Women Run, 2019 adjudged the largest women fitness event on the sub-Saharan Africa, attracting over 27,000 women.
+                <p>Lenpriss is a dependable brand in Event Management and 2222 Promotion being the catalytic force behind two major events of international significance. <span id="dots2">...</span><span id="more2" style="display :none;">We have recently pulled together, organised and promoted some of the largest events in Sub-Saharan African. The most recent one being the Lagos Women Run, 2019 adjudged the largest women fitness event on the sub-Saharan Africa, attracting over 27,000 women.
 Lenpriss International has also sustained the momentum of the National Parenting Conference.
-</p>
+</span> </p>
+
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction2()" id="myBtn2">Read more</button>
+
+
+<script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
@@ -137,10 +202,32 @@ Lenpriss International has also sustained the momentum of the National Parenting
               <article class="box-light wow slideInLeft" data-wow-delay=".15s">
                 <div class="box-light-icon fl-bigmug-line-file69"></div>
                 <h4 class="box-light-title">Fund Raising and Sponsorship Drive</h4>
-                <p>Lenpriss International has supported and enabled various organisations and SMEs to strategize and raise funds for various purposes – from start-up to go-to-market funding. Besides the great work with SMEs, Lenpriss is adept at Fundraising and Sponsorship drive, leveraging high network relationship to funds for high profile events.
+                <p>Lenpriss International has supported and enabled various organisations and SMEs to strategize and raise funds for various purposes – from start-up to go-to-market funding. <span id="dots3">...</span><span id="more3" style="display :none;">Besides the great work with SMEs, Lenpriss is adept at Fundraising and Sponsorship drive, leveraging high network relationship to funds for high profile events.
 In our world, dreams become reality making  Lenpriss the go-to-firm for guaranteed results.
 
-</p>
+</span> </p>
+
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction3()" id="myBtn3">Read more</button>
+
+<script>
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
@@ -148,9 +235,31 @@ In our world, dreams become reality making  Lenpriss the go-to-firm for guarante
               <article class="box-light wow slideInLeft" data-wow-delay=".15s">
                 <div class="box-light-icon fl-bigmug-line-share27"></div>
                 <h4 class="box-light-title">Human Resources Management Solutions</h4>
-                <p>Lenpriss International has been involved in providing strategic human resources solutions in the areas of Recruitment, talent management, compensation structuring, payroll services and employees attitudinal and organisational cultural change. We package bespoke Trainings & Developments programs that meet individuals and organisational needs.
+                <p>Lenpriss International has been involved in providing strategic human resources solutions in the areas of Recruitment, talent management, compensation structuring, payroll services and employees attitudinal and organisational cultural change. <span id="dots4">...</span><span id="more4" style="display :none;">We package bespoke Trainings & Developments programs that meet individuals and organisational needs.
 As a top notch facilitator, Lenpriss is recognized nationwide for her famous Etiquette program in partnership with National Youth Service Corps(NYSC) as well as several faith based organizations and Not for Profits.
-</p>
+</span> </p>
+
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction4()" id="myBtn4">Read more</button>
+
+
+<script>
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
               </article>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-4 wow-outer">
@@ -159,8 +268,28 @@ As a top notch facilitator, Lenpriss is recognized nationwide for her famous Eti
                 <div class="box-light-icon fl-bigmug-line-store10"></div>
                 <h4 class="box-light-title">Editorial and Book Review Services</h4>
                 <p>Lenpriss in a related line of service provides editorial services to individuals and organisations in content development, content writing, editorial services and book reviews.
-Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Obaje has been priviledged to sit among a three-man powerful panel of book reviewers- erudite Professors- Pat Utomi And  Chukwuma C. Soludo, for Chinwe Okoli’s Book, A Daunting Odessey.
-​</p>
+<span id="dots5">...</span><span id="more5" style="display :none;">Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Obaje has been priviledged to sit among a three-man powerful panel of book reviewers- erudite Professors- Pat Utomi And  Chukwuma C. Soludo, for Chinwe Okoli’s Book, A Daunting Odessey.
+​ </span> </p>
+
+<button  class="button button-sm button-primary button-winona wow slideInUp" onclick="myFunction5()" id="myBtn5">Read more</button>
+<script>
+function myFunction5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
               </article>
             </div>
 
@@ -176,7 +305,7 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
 .</span></p>
               <p class="wow-outer"><span class="wow slideInDown" data-wow-delay=".1s">At Lenpriss, our goal is to provide critical support services for SMEs and Entrepreneurs to engender transformational growth and phenomenal success. We deploy high level professional and entrepreneurial drive, adaptable and innovative business tools, value creation opportunities, and overall innovative drive for wealth creation.
               Leveraging High-Performance Management (HPM) experience with Tier one companies, LENPRISS has recorded consistent success to maximise corporate performance, drive growth, generate revenue, increase market share and enhance overall business value.</span></p>
-              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="#">Learn more</a></div>
+              <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInDown" data-wow-delay=".1s" href="#contact-us">Contact Us </a></div>
             </div>
             <div class="col-md-10 col-lg-6 wow-outer"><img class="img-responsive wow slideInRight" src="images/nesa.jpg" alt="" width="570" height="368"/>
             </div>
@@ -202,33 +331,36 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
           <div class="row row-50">
             <div class="col-sm-6 col-lg-4 wow-outer">
               <!-- Profile Minimal-->
-              <article class="profile-minimal wow slideInLeft"><img class="profile-minimal-image" src="images/team-2-370x368.jpg" alt="" width="370" height="368"/>
+              <article class="profile-minimal wow slideInLeft"><img class="profile-minimal-image" src="images/Ada Pic.jpg" alt="" width="370" height="368"/>
                 <div class="profile-minimal-caption">
-                  <h4 class="profile-minimal-title">Jean Thompson</h4>
-                  <p class="profile-minimal-position">PR Manager</p>
+                  <h4 class="profile-minimal-title">Ada Obaje</h4>
+                  <p class="profile-minimal-position">CEO</p>
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
+            <div class="col-sm-6 col-lg-8 wow-outer">
+              <p class="col-sm-6 col-lg-8 wow-outer">
+                Ada Obaje is the CEO of Lenrpriss Enterprise. She has over 20 years of experience in digital marketing...
+              </p>
               <!-- Profile Minimal-->
-              <article class="profile-minimal wow slideInLeft" data-wow-delay=".05s"><img class="profile-minimal-image" src="images/team-3-370x368.jpg" alt="" width="370" height="368"/>
+              <!-- <article class="profile-minimal wow slideInLeft" data-wow-delay=".05s"><img class="profile-minimal-image" src="images/team-3-370x368.jpg" alt="" width="370" height="368"/>
                 <div class="profile-minimal-caption">
                   <h4 class="profile-minimal-title">Brian Payne</h4>
                   <p class="profile-minimal-position">Marketing Expert</p>
                 </div>
               </article>
             </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
+            <div class="col-sm-6 col-lg-4 wow-outer"> -->
               <!-- Profile Minimal-->
-              <article class="profile-minimal wow slideInLeft" data-wow-delay=".1s"><img class="profile-minimal-image" src="images/team-1-370x368.jpg" alt="" width="370" height="368"/>
+              <!-- <article class="profile-minimal wow slideInLeft" data-wow-delay=".1s"><img class="profile-minimal-image" src="images/team-1-370x368.jpg" alt="" width="370" height="368"/>
                 <div class="profile-minimal-caption">
                   <h4 class="profile-minimal-title">Nathan Porter</h4>
                   <p class="profile-minimal-position">CEO, Founder</p>
                 </div>
               </article>
             </div>
-          </div>
-          <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#">View all Team</a></div>
+          </div> -->
+          <!-- <div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#">View all Team</a></div> -->
         </div>
       </section>
       <!-- Testimonials-->
@@ -244,14 +376,14 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
                       <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
                     </svg>
                     <div class="quote-modern-text">
-                      <p>Profilab is, hands down, one of the best companies that we have worked with! The company has either met or exceeded all of the goals that we initially set for all of the projects that they implemented for us. I am sure that our company will partner with them again in the future.</p>
+                      <p>Ada obaje and her lenpriss team offer a truly world class service. with a unique capacity for business coordination & promotion. Lenpriss makes doing  business in Nigeria an exciting experience.first choice any day.</p>
                     </div>
                     <div class="quote-modern-meta">
-                      <div class="quote-modern-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
+                      <div class="quote-modern-avatar"><img src="images/testimonial1.jpg" alt="" width="96" height="96"/>
                       </div>
                       <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Albert Webb</cite>
-                        <p class="quote-modern-caption">CEO at Majestic</p>
+                        <cite class="quote-modern-cite">Chris Ehiobuche</cite>
+                        <p class="quote-modern-caption">CEO at PDC</p>
                       </div>
                     </div>
                   </blockquote>
@@ -262,19 +394,19 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
                       <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
                     </svg>
                     <div class="quote-modern-text">
-                      <p>Profilab team provides us with a full service digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email and marketing automation that has increased our visibility and inbound lead generation.</p>
+                      <p>Lenpriss team provides us with a full service digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email and marketing automation that has increased our visibility and inbound lead generation.</p>
                     </div>
                     <div class="quote-modern-meta">
-                      <div class="quote-modern-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
+                      <div class="quote-modern-avatar"><img src="images/testimonial2.png" alt="" width="96" height="96"/>
                       </div>
                       <div class="quote-modern-info">
-                        <cite class="quote-modern-cite">Kelly McMillan</cite>
-                        <p class="quote-modern-caption">Private Entrepreneur</p>
+                        <cite class="quote-modern-cite">Tochukwu Orajiaku</cite>
+                        <p class="quote-modern-caption">CEO at Vitachem</p>
                       </div>
                     </div>
                   </blockquote>
                 </div>
-                <div class="wow-outer">
+                <!-- <div class="wow-outer">
                   <blockquote class="quote-modern wow slideInLeft">
                     <svg class="quote-modern-mark" x="0px" y="0px" width="35px" height="25px" viewbox="0 0 35 25">
                       <path d="M27.461,10.206h7.5v15h-15v-15L25,0.127h7.5L27.461,10.206z M7.539,10.206h7.5v15h-15v-15L4.961,0.127h7.5                L7.539,10.206z"></path>
@@ -291,10 +423,10 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
                       </div>
                     </div>
                   </blockquote>
-                </div>
+                </div> -->
               </div>
             </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
+            <!-- <div class="col-md-10 col-lg-6 wow-outer">
               <div class="thumbnail-video-1 bg-gray-700 wow slideInLeft">
                 <div class="embed-responsive embed-responsive-16by9">
                   <iframe width="570" height="320" src="//www.youtube.com/embed/QZzbm-FrkGk" allowfullscreen=""></iframe>
@@ -304,7 +436,7 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
                   <h5>Lawrence Alvarado</h5>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -427,12 +559,12 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
           <div class="row row-50">
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a href="#">10 Digital Marketing Mistakes to Avoid</a></h4>
+              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/blog1.jpg" alt="" width="571" height="353"/></a>
+                <h4 class="post-modern-title"><a href="#">Keep at it</a></h4>
                 <ul class="post-modern-meta">
-                  <li>by Theresa Barnes</li>
+                  <li>by Cynthia Okon</li>
                   <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
+                    <time datetime="2019">May  19, 2020 at 15:05 pm</time>
                   </li>
                   <li><a class="button-winona" href="#">News</a></li>
                 </ul>
@@ -442,11 +574,11 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
             <div class="col-md-6 wow-outer">
               <!-- Post Modern-->
               <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a href="#">Where Marketers Need to Succeed This Season</a></h4>
+                <h4 class="post-modern-title"><a href="#">Write a book</a></h4>
                 <ul class="post-modern-meta">
-                  <li>by Theresa Barnes </li>
+                  <li>by Ada Obaje </li>
                   <li>
-                    <time datetime="2019">Apr 21, 2019 at 12:05 pm</time>
+                    <time datetime="2019">June 21, 2020 at 09:08 am</time>
                   </li>
                   <li><a class="button-winona" href="#">News</a></li>
                 </ul>
@@ -609,14 +741,13 @@ Adept at the trade, the Managing Director of Lenpriss International, Mrs. Ada Ob
                 <h4>Contact Information</h4>
                 <hr>
                 <ul class="list-sm">
-                  <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">2130 Fulton Street San Diego, CA <br> 94117-1080 USA</a></li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">Plot 15 Ikota Villa Estate, Lekki -Epe  <br> Expressway, Lagos, Nigeria</a></li>
                   <li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span>
                     <ul class="list-0">
-                      <li><a class="link-default" href="tel:#">1-800-1234-678</a></li>
-                      <li><a class="link-default" href="tel:#">1-800-8765-098</a></li>
+                      <li><a class="link-default" href="tel:#">+234-818-629-2849</a></li>
                     </ul>
                   </li>
-                  <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@demolink.org</a></li>
+                  <li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@lenpriss.com</a></li>
                 </ul>
               </div>
             </div>
