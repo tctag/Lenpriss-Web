@@ -11,6 +11,38 @@ Custom Styling
   background-color: rgba(0,0,0,0.3);
 }
 
+.pic2{
+  text-align: center;
+}
+
+.spacer {
+  height: 10px;
+  width: 100%;
+}
+
+.title-2 {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-container {
+  max-width: 700px;
+}
+
+.description__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+  max-width: 90%;
+  width: 600px;
+  text-align: center;
+}
+
 .text1{
   display: flex;
   width: 300px;
@@ -5750,15 +5782,25 @@ html:not(.tablet):not(.mobile) .profile-classic-caption {
 	padding-bottom: 100%;
 }
 
+.center{
+  display: block;
+    margin: 0 auto;
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; */
+}
+
+
+
 .profile-minimal-image {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	min-height: 100%;
-	min-width: 100%;
-	width: auto;
-	height: auto;
+	min-height: 50%;
+	min-width: 50%;
+
 	max-width: none;
 }
 
