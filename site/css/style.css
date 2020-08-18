@@ -11,6 +11,19 @@ Custom Styling
   background-color: rgba(0,0,0,0.3);
 }
 
+.pricing-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.pricing-container > article {
+	border: 1px solid black;
+	max-width: 350px;
+	padding: 20px 30px;
+}
+
 .pic2{
   text-align: center;
 }
